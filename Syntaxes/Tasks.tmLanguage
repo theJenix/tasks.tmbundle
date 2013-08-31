@@ -21,8 +21,8 @@
 			<string>#link</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>^(\s*)(✓)</string>
+			<key>match</key>
+			<string>^(\s*)((.+)(@done)\s*$\n?)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -30,7 +30,7 @@
 					<key>name</key>
 					<string>punctuation.whitespace.list_item.leading.tasks</string>
 				</dict>
-				<key>2</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.definition.list_item.tasks</string>
